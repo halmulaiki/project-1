@@ -7,3 +7,4 @@ window.onscroll =()=> {scrollFunction()}
     document.getElementById("topH1").style.fontSize = "20px"
   }
 }
+//addeventlistener('scroll', scrollFunction)
