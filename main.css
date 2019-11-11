@@ -37,30 +37,51 @@ height: 700px;
 }
 
 .gapp {
-margin-top: 10%;
-display: grid;
-grid-template: 60vh / 33% 33% 33%;
-align-items: center;
-box-shadow: inset 0 0 6px #000000;
-background-color:#ccc;
-grid-column: 1 / span 3;
-grid-row: 3;
+/* margin-top: 50%; */
 
+display: grid;
+grid-template: 158px /  35% 34% 15%;
+grid-gap: 30px;
+align-items: center;
+box-shadow: inset 0 0 3px #000000;
+background-color:#ccc;
+
+margin-right: 0
 }
 #grid {
 display: grid;
 justify-content: center;
 font-weight: 600;
 color: #fff;
-grid-gap:20px;
-padding: 16px 16px;
+
+padding: 16px 111px;
+
 /*font-size: 2em;*/
 
 }
 .gapp div{
-  background-color: red;
-  padding-top: 16px;
+display: grid;
+position: center;
+background-color: red;
+padding-top: 69px;
+padding-bottom: 50px;
+width: 150px;
+height: 30px;
+
 }
+.gapp a{
+  text-decoration: none;
+}
+.gapp div:nth-child(1){
+  background-image: url("http://edikanforadio.com/wp-content/uploads/2016/08/01-300x136.jpg");
+}
+.gapp div:nth-child(2){
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQGA339O4ABiVzSKHnIE0yR7XP1CHRUFMB_xKOHZvWeBDpPEBGHg&s");
+}
+.gapp div:nth-child(3){
+  background-image: url("https://images-na.ssl-images-amazon.com/images/I/61vvPgDP7hL._SX355_.jpg");
+}
+
 .bottom {
   margin: 0 0 0 0;
   background-color: orange;
