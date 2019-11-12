@@ -7,6 +7,7 @@ window.onscroll =()=> {scrollFunction()}
     document.getElementById("topH1").style.fontSize = "40px"
   }
 }
+
 //addeventlistener('scroll', scrollFunction)
 // curser =()=> {
 //   let popup = document.getElementById("grid")
