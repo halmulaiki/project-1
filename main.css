@@ -10,13 +10,8 @@ margin: 0;
 
 }
 .par {
-margin-bottom: 1.7778em;
-display: block;
-margin-block-start: 1em;
-margin-block-end: 1em;
-margin-inline-start: 0px;
-margin-inline-end: 0px;
-font-size: 115.5%;
+padding: 13px 102px 55px 62px;
+font-size: 148.5%;
 }
 .abovenav {
 background-color: #000;
@@ -100,13 +95,9 @@ height: 30px;
 
 }
 #effect{
-  animation-name: slide;
-  animation-duration: 4s;
+
 }
-@keyframes slide {
-  from {opacity:0;}
-  to {opacity:1;}
-}
+
 .gapp a{
   text-decoration: none;
 
@@ -145,12 +136,23 @@ background-size: cover;
 .gapp div:nth-child(9){background-image: url("http://www.semaforo.mx/sites/default/files/styles/full_article/public/captura_de_pantalla_2019-03-01_a_las_10.56.02.png?itok=yv_gTiyQ");
 background-size: cover;
 }
+
 #effect:hover {
--ms-transform: scale(1.5);
--webkit-transform: scale(1.5);
 transform: scale(1.5);
+transform: scale(1.5);
+transform: scale(1.5);
+transition: all .4s ease-in-out;
 cursor: pointer;
 }
+
+/* @keyframes grow {
+  0% {
+transform: 0
+  }
+  50% {
+transition: scale(1.5)
+}} */
+
 .authors{
 /* display: grid;
 grid-gap: 20px; */
@@ -200,21 +202,24 @@ color: white;
 }
 .about{
 background-color: rgb(43, 176, 241);
-display: flex;
+display: grid;
 align-items: center;
-padding: 51px 332px 96px 63px;
+padding: 51px 124px 96px 63px;
 font-size: 115.5%;
 margin: 0;
 justify-content: space-between;
+grid-template: auto / auto auto;
+grid-column-gap: 354px;
 }
 .text-about{
 padding-bottom: 65px;
-padding-top: 20px;
+padding-top: 79px;
 letter-spacing: 0.2px;
 line-height: 26px;
+width: 151%;
 }
-.about img{
-  position: right;
+.aboutimage {
+
 }
 .bottom {
 margin: 0;
