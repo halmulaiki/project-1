@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
 font-family: sans-serif;
 /* text-align: center; */
@@ -12,17 +16,24 @@ margin-block-start: 1em;
 margin-block-end: 1em;
 margin-inline-start: 0px;
 margin-inline-end: 0px;
+font-size: 115.5%;
+}
+.abovenav {
+background-color: #000;
+padding: 30px;
+text-align: center;
+color: rgb(249, 24, 24);
 }
 
 #topH1 {
-display: grid;
+
 text-align: center;
-background-color: gray;
-margin: 0;
+background-color: #fff;
+
 padding: 10px 8px;
-position: fixed;
-overflow: hidden;
-width: 100%;
+position: sticky;
+font-size: 40px;
+/* width: 100%; */
 top:0;
 transition: 0.2s;
 
@@ -52,16 +63,26 @@ display: grid;
 grid-template: 158px /  35% 34% 15%;
 grid-gap: 30px;
 align-items: center;
-box-shadow: inset 0 0 3px #000000;
-background-color:#ccc;
+box-shadow: inset 0 0 7px #000;
+background-color:rgb(210, 210, 210);
+margin: 0;
 
-margin-right: 0
+}
+.white a{
+  color: #fff;
+
+}
+.black a{
+  color: #000;
+}
+.red a{
+  color: rgb(255, 0, 0);
 }
 #grid {
 display: grid;
 justify-content: center;
 font-weight: 600;
-color: #fff;
+
 
 padding: 16px 111px;
 
@@ -77,6 +98,14 @@ padding-bottom: 50px;
 width: 150px;
 height: 30px;
 
+}
+#effect{
+  animation-name: slide;
+  animation-duration: 4s;
+}
+@keyframes slide {
+  from {opacity:0;}
+  to {opacity:1;}
 }
 .gapp a{
   text-decoration: none;
@@ -113,7 +142,7 @@ background-size: cover;
 }
 
 
-.gapp div:nth-child(9){background-image: url("http://www.iso.org/files/live/sites/isoorg/files/news/News_archive/2019/03/Ref2378/Ref2378.jpg/thumbnails/300x300");
+.gapp div:nth-child(9){background-image: url("http://www.semaforo.mx/sites/default/files/styles/full_article/public/captura_de_pantalla_2019-03-01_a_las_10.56.02.png?itok=yv_gTiyQ");
 background-size: cover;
 }
 #effect:hover {
@@ -144,7 +173,7 @@ align-items: center;
 display: -ms-inline-flexbox; */
 display: inline-flex;
 min-width: 297.89px;
-padding: 13px 162px 55px 62px;
+padding: 13px 102px 55px 62px;
 font-size: 55%;
 
 }
@@ -181,6 +210,8 @@ justify-content: space-between;
 .text-about{
 padding-bottom: 65px;
 padding-top: 20px;
+letter-spacing: 0.2px;
+line-height: 26px;
 }
 .about img{
   position: right;
@@ -203,7 +234,7 @@ padding-bottom: 1em;
 }
 .bottomfirstsection{
   display: grid;
-  grid-template: 27px / 34% 35% 10%;
+  grid-template: auto/ auto auto auto;
   grid-gap: 12px;
   align-items: center;
   padding: 60px 141px 96px 86px;
